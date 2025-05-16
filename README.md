@@ -1,1 +1,1 @@
-# bu_qms
+ayaw ko na
