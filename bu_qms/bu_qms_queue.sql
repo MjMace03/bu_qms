@@ -45,9 +45,8 @@ CREATE TABLE `queue` (
   KEY `sessionID` (`sessionID`),
   KEY `staffID` (`staffID`),
   CONSTRAINT `queue_ibfk_1` FOREIGN KEY (`nfc_tag`) REFERENCES `users` (`nfc_tag`),
-  CONSTRAINT `queue_ibfk_2` FOREIGN KEY (`sessionID`) REFERENCES `service_session` (`sessionID`),
   CONSTRAINT `queue_ibfk_3` FOREIGN KEY (`staffID`) REFERENCES `staff` (`staffID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

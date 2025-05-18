@@ -39,7 +39,7 @@ CREATE TABLE `service_session` (
   KEY `currServing` (`currServing`),
   CONSTRAINT `service_session_ibfk_1` FOREIGN KEY (`staffID`) REFERENCES `staff` (`staffID`),
   CONSTRAINT `service_session_ibfk_2` FOREIGN KEY (`currServing`) REFERENCES `queue` (`queueNumber`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
